@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+:root {
+    --primary-color: rgba(0, 0, 0, 0.85);
+    --secondary-color: rgba(0, 0, 0, 0.7);
+    --service_icons-color: rgba(0, 0, 0, 0.55);
+}
+
+* {
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* utilities */
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+
+/* header */
+
+ion-icon {
+    font-size: 24px;
+    padding: 0 5px;
+    color: white;
+    transition-duration: 0.5s;
+}
+
+ion-icon:hover,
+ion-icon:active {
+    color: rgba(255, 255, 255, 0.334);
+}
+
+
+/* for dropdown */
+
+.dropdown-menu {
+    background-color: rgba(255, 255, 255, 0.24);
+}
+
+nav {
+    display: block;
+}
+
+header {
+    background-color: var(--primary-color);
+    height: 100vh;
+    color: white;
+}
+
+.c-links a {
+    color: white;
+}
+
+.c-name {
+    flex-basis: 30%;
+}
+
+.c-img {
+    flex-basis: auto;
+    align-self: flex-end;
+}
+
+.c-img img {
+    width: 100%;
+}
+
+.c-skills {
+    flex-basis: 40%;
+    align-items: center;
+}
+
+.c-hero_header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* section 2 */
+
+.sec2 {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.c-service_icon {
+    background-color: var(--service_icons-color);
+    transition-duration: 0.5s;
+}
+
+.c-service_icon:hover,
+.c-service_icon:active,
+.c-service_icon:link,
+.c-service_icon:visited {
+    transform: scale(1.05)
+}
+
+.sec2 img {
+    width: 72px;
+}
+
+
+/* section 3 */
+
+
+/* section 4 */
+
+.sec4 {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.c-cards .c-vertical_cards {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 55%;
+}
+
+.c-cards .c-vertical_cards .card {
+    flex-basis: 45%;
+}
+
+.c-cards .c-horizontal_cards {
+    flex-basis: 40%;
+}
+
+.img-fluid.rounded-start {
+    height: 100%;
+}
+
+
+/* footer */
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+footer .c-contact div {
+    background-color: var(--service_icons-color);
+    border-radius: 3px;
+    transition-duration: 0.5s;
+    min-width: fit-content;
+}
+
+footer .c-contact div:hover {
+    background-color: rgba(0, 0, 0, 0.299);
+}
+
+.c-top_btn {
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    right: 0%;
+    bottom: 10%;
+}
+
+.c-whatsapp_btn {
+    background-color: white;
+    right: 5%;
+    bottom: 10%;
+}
+
+
+/* keyframes for the whatsapp */
+
+@keyframes whatsapp {
+    0% {
+        transform: scale(1.01);
+    }
+    44% {
+        transform: scale(1.02);
+    }
+    66% {
+        transform: scale(1.03);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+
+/* media queries for the cards between some two breakpoints  */
+
+@media screen and (max-width:768px) {
+    .c-horizontal_cards {
+        display: none;
+    }
+    .c-cards .c-vertical_cards {
+        display: flex;
+        justify-content: space-around;
+    }
+    .c-img {
+        display: none;
+    }
+    .c-hero_header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .c-contact div {
+        margin-bottom: 1rem;
+    }
+}
+
+
+/* X-Small devices (portrait phones, less than 576px) */
+
+@media (min-width: 576px) and (max-width:992px) {
+    .c-img {
+        display: none;
+    }
+    .c-hero_header {
+        justify-content: space-around;
+    }
+    .c-vertical_cards .card {
+        max-height: fit-content;
+    }
+    .c-horizontal_cards .card {
+        max-height: fit-content;
+    }
+}
+
+
+/* Small devices (landscape phones, less than 768px) */
+
+@media (min-width: 768px) {
+    .c-img {
+        display: none;
+    }
+}
+
+
+/* Medium devices (tablets, less than 992px) */
+
+
+/*done*/
+
+@media (min-width: 992px) {
+    .c-img {
+        display: block;
+    }
+}
+
+
+/* Large devices (desktops, less than 1200px) */
+
+
+/* done */
+
+@media (min-width: 1200px) {}
+
+
+/* XX-Large devices (larger desktops)
+No media query since the xxl breakpoint has no upper bound on its width */

@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body>div{
+    background-color:ghostwhite;
+}
+nav .input-group {
+    width: 40rem;
+}
+/* hero header */
+.carousel-item{
+    max-height: 100vh;
+}
+.carousel-inner>.carousel-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    line-height: 1;
+    width: 100%;
+}
+.carousel-caption{
+    top:50%;
+    bottom: 0%;
+    transform: translateY(-50%);
+    max-width: 40%;
+}
+/* deals section */
+.deals .c-deals-text{
+    flex-basis: 20%;
+}
+.deals .c-deals-items{
+    flex-basis: 70%;
+}
+.deals .MultiCarousel{
+    float: right;
+    width: 70%;
+}
+
+
+
+/* section just before footer */
+.col-3{
+    height:15rem;
+}
+.col-3.position-relative.bg-white.border-2.shadow img{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* footer */
+footer .input-group{
+    width: 100%;
+    flex-wrap: nowrap;
+}
+footer>div{
+    background-color:white;
+}
+footer ul{
+    list-style: none;
+    padding-left:0;
+}
+footer ul li a{
+    text-decoration: none;
+    font-size:large;
+}
+.input-group input.p-2.border-0.shadow-sm:focus{
+    outline: none;
+    background-color:whitesmoke;
+}

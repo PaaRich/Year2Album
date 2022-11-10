@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="/company/resources/css/style.css">
+    <title>Consoloan</title>
+</head>
+
+<body>
+    <div>
+        <header class="position-relative">
+            <div>
+                <div class="c-header-titleBar d-flex flex-column flex-sm-row justify-content-lg-around align-items-center">
+                    <div class="c-partA d-flex align-items-center">
+                        <div class="dropdown pe-lg-3">
+                            <button class="btn btn-transparent text-white dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              English
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">French</a></li>
+                                <li><a class="dropdown-item" href="#">Portugees</a></li>
+                                <li><a class="dropdown-item" href="#">Spanish</a></li>
+                            </ul>
+                        </div>
+                        <div class="d-none d-md-block">
+                            <div class="d-flex justify-content-between align-items-center pe-lg-3">
+                                <ion-icon name="mail" class="text-warning px-2"></ion-icon>
+                                <a href="#">info.consoloancontact@gmail.com</a>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center pe-lg-3">
+                                <ion-icon name="call" class="text-warning px-2"></ion-icon>
+                                <a href="#">0546684004</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-partB d-flex justify-content-lg-around align-items-center">
+                        <a href="#" class=" py-2 px-3 fs-6 me-5 text-dark">GET A QUOTE</a>
+                        <div class="c-social-media-icons">
+                            <a href="#">
+                                <ion-icon name="logo-facebook" class="me-3 text-white"></ion-icon>
+                            </a>
+                            <a href="#">
+                                <ion-icon name="logo-twitter" class="me-3 text-white"></ion-icon>
+                            </a>
+                            <a href="#">
+                                <ion-icon name="logo-linkedin" class="me-3 text-white"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- put your nav here -->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container">
+                        <a class="navbar-brand d-flex align-items-center" href="#">
+                            <ion-icon name="logo-capacitor" class="text-warning px-2"></ion-icon>
+                            <span class="fw-bolder">Consuloan</span>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                <li class="nav-item pe-3">
+                                    <a class="nav-link text-warning" aria-current="page" href="#">HOME</a>
+                                </li>
+                                <li class="nav-item pe-3">
+                                    <a class="nav-link" href="#c-sec2">SERVICES</a>
+                                </li>
+                                <li class="nav-item pe-3">
+                                    <a class="nav-link" href="#latest-news">NEWS</a>
+                                </li>
+                                <li class="nav-item pe-3">
+                                    <a class="nav-link" href="#about__section">ABOUT US</a>
+                                </li>
+                                <li class="nav-item pe-3">
+                                    <a class="nav-link" href="#contact">CONTACT</a>
+                                </li>
+                                <span class="vertical"></span>
+                                <!-- Button trigger modal -->
+                                <li class="nav-item ms-2 pe-3">
+                                    <button type="button" class="btn btn-transparent" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <ion-icon class="fw-bold fs-5" name="search"></ion-icon>
+                                    </button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">search</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <nav class="navbar navbar-light bg-light">
+                                                        <div class="container-fluid">
+                                                            <form class="d-flex">
+                                                                <input class="form-control me-0" type="search" placeholder="Search" aria-label="Search">
+                                                            </form>
+                                                        </div>
+                                                    </nav>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                </nav>
+
+                <!-- hero-header -->
+                <div class="c-hero-header">
+                    <div class="container">
+                        <div class="c-text">
+                            <h1 class="fw-bolder mb-lg-4" style="letter-spacing:2px;word-spacing:5px;"><span class="text-primary">WE HAVE </span><span class="text-warning">POWER</span><br><span class="text-primary">TO LET YOUR</span><br><span class="text-warning">BUSINESS</span> <span class="text-primary">GROW</span></h1>
+                            <div class="c-buttons">
+                                <button type="button" class="btn btn-warning me-2">OUR COMPANY</button>
+                                <button type="button" class="btn btn-primary ms-2">SERVICES</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </header>
+        <section id="about__section">
+            <div class="container text-center py-5">
+                <div class="c-heading position-relative">
+                    <h2 class="pb-4">Our Industry</h2>
+                    <div class="c-horizontal"></div>
+                </div>
+                <div class="container py-5 c-cards">
+                    <div class="container">
+                        <div class="row shadow border-5">
+                            <div class="col py-3 c-active">
+                                <ion-icon name="business-outline"></ion-icon>
+                                <p class="fw-bold fs-4">Property Management</p>
+                                <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti tempore id, in quos ipsa illum possimus qui non minima recusandae.</p>
+                            </div>
+                            <div class="col py-3">
+                                <ion-icon name="receipt-outline"></ion-icon>
+                                <p class="fw-bold fs-4">Strategic Planning</p>
+                                <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed adipisci consequuntur beatae, doloremque perspiciatis cum quod quam </p>
+                            </div>
+                            <div class="col py-3">
+                                <ion-icon name="earth"></ion-icon>
+                                <p class="fw-bold fs-4">Investment Opportunities</p>
+                                <p class="fs-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed beatae voluptatem ut aperiam. Exercitationem modi ut harum ratione nostrum. Ea.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- second section -->
+        <section id="c-sec2" class="py-5">
+            <div class="container d-flex justify-content-sm-evenly align-items-center h-50 c-sec2">
+                <div class="d-none d-sm-block c-img">
+                    <img class="img-fluid" src="/company/resources/img/headsgather.jpg" alt="">
+                </div>
+                <div class="c-text text-white h-md-100 d-flex flex-column justify-content-lg-center align-items-start">
+                    <p class="fw-bold fs-3"><span class="text-warning">30 Years</span> of successful business consulting</p>
+                    <p class="fs-5 py-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse dicta minima ducimus dolorum maiores, enim iste nemo veritatis maxime quas voluptatum saepe et accusantium eum. Voluptates, odit hic consequuntur aspernatur quas, ut vitae,
+                        explicabo sed qui nam id ab inventore!</p>
+                    <button type="button" class="btn btn-warning py-2 px-4 fs-5 fw-bold">Read more</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- third section -->
+        <section>
+            <div class="container text-center py-5">
+                <div class="container w-75">
+                    <img src="/company/resources/img/images.png" alt="quote" style="width:48px;color:yellow;">
+                    <h2 class="py-3">2000<sup>+</sup> Happy Clients</h2>
+                    <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga tenetur incidunt similique aspernatur ipsa possimus officia, ducimus nesciunt assumenda, molestiae voluptatibus sequi, maxime voluptates. Libero unde totam sit excepturi
+                        exercitationem.
+                    </p>
+                </div>
+                <!-- slider -->
+                <div class="container">
+
+                </div>
+            </div>
+        </section>
+
+        <!-- fourth section -->
+        <section id="c-sec4">
+            <div class="container py-5 text-center">
+                <h2 class="fw-bold text-white" style="word-spacing:2px;letter-spacing:2px;">We advise you,you call <span class="text-warning">the right</span> decision</h2>
+                <p class="fs-5 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, iusto!</p>
+                <div class="container pt-5">
+                    <div class="row row-cols-2 row-cols-sm-4">
+                        <div class="col">
+                            <ion-icon name="color-filter-outline"></ion-icon>
+                            <h3 class="text-warning fw-bold">90</h3>
+                            <p class="text-white fs-5">Companies consulted</p>
+                        </div>
+                        <div class="col">
+                            <ion-icon name="headset-outline"></ion-icon>
+                            <h3 class="text-warning fw-bold">120</h3>
+                            <p class="text-white fs-5">Consultants</p>
+                        </div>
+                        <div class="col">
+                            <ion-icon name="bookmarks-outline"></ion-icon>
+                            <h3 class="text-warning fw-bold">50</h3>
+                            <p class="text-white fs-5">Awards Winning</p>
+                        </div>
+                        <div class="col">
+                            <ion-icon name="fitness-outline"></ion-icon>
+                            <h3 class="text-warning fw-bold">240</h3>
+                            <p class="text-white fs-5">Satisfied Customers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- fifth section -->
+        <section id="latest-news">
+            <div class="container py-5">
+                <h3 class="text-center fw-bold" style="letter-spacing:1px;">Latest News</h3>
+                <div class="d-flex jusfity-content-lg-around align-items-lg-center pt-4">
+                    <div class="card mb-3 w-50 border-0">
+                        <div class="row g-0 d-flex align-items-lg-center justify-content-lg-evenly">
+                            <div class="col-md-4">
+                                <img src="/company/resources/img/hug.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body bg-white">
+                                    <h5 class="card-title">Advisory Plan</h5>
+                                    <p class="card-text fw-bold fs-3">Colombia Gets a<br>Business Makeover</p>
+                                    <p class="card-text text-warning fs-5">we are here for you</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 w-50 border-0">
+                        <div class="row g-0 d-flex align-items-lg-center justify-content-lg-around">
+                            <div class="col-md-4">
+                                <img src="/company/resources/img/handstogether.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body bg-white">
+                                    <h5 class="card-title">Finance & Accounting</h5>
+                                    <p class="card-text fw-bold fs-3">The Recurring Debate<br>Over Concurrent Delays</p>
+                                    <p class="card-text text-warning fs-5">we are here for you</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- sixth section -->
+        <section>
+            <div class="container-lg-fluid d-none d-sm-flex flex-xl-row flex-column flex-sm-column justify-content-lg-center align-items-lg-center">
+                <div class="c-google-map">
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe width="100%" height="404" id="gmap_canvas" src="https://maps.google.com/maps?q=sunyani,%20ghana&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123 movies</a><br>
+                            <style>
+                                .mapouter {
+                                    position: relative;
+                                    text-align: right;
+                                    height: 404px;
+                                    width: 750px;
+                                }
+                            </style><a href="https://www.embedgooglemap.net">using google maps on your website</a>
+                            <style>
+                                .gmap_canvas {
+                                    overflow: hidden;
+                                    background: none!important;
+                                    height: 404px;
+                                    width: 750px;
+                                }
+                                
+                                @media (min-width: 768px) {
+                                    .gmap_canvas {
+                                        overflow: hidden;
+                                        background: non !important;
+                                        height: 404px;
+                                        width: 100%;
+                                    }
+                                }
+                            </style>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-contact text-white ps-5 py-5">
+                    <div class="w-75">
+                        <div>
+                            <h3 class="fw-bold fs-3"><span class="text-warning">Request</span> a call back.</h3>
+                            <p class="fs-5 my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, enim cumque? At vitae cupiditate, sit quos labore ipsam similique distinctio dolor.</p>
+                        </div>
+                        <div>
+                            <p class="fw-bold">I WOULD LIKE TO DISCUSS:</p>
+                            <form>
+                                <table>
+                                    <tr>
+                                        <td><input class="p-2 mb-2 me-2 fw-bold bg-white border-0 rounded" type="text" placeholder="How can we help" required></td>
+                                        <td><input class="p-2 mb-2 fw-bold bg-white border-0 rounded" type="text" placeholder="Phone Number" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="p-2 mt-2 me-2 fw-bold bg-white border-0 rounded" type="text" placeholder="Your Name" required></td>
+                                        <td><input class="p-2 mt-2 fw-bold bg-warning border-0 rounded w-100" type="submit" placeholder="Submit"></td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="container pt-3 c-financial">
+                    <div class="row row-cols-lg-4">
+                        <div class="col d-flex flex-column align-items-center">
+                            <ion-icon class="text-warning" name="logo-bitcoin"></ion-icon>
+                            <p class="fw-bold fs-5 c-currency">Bitcoin</p>
+                        </div>
+                        <div class="col d-flex flex-column align-items-center">
+                            <ion-icon name="logo-euro"></ion-icon>
+                            <p class="fw-bold fs-5 c-currency">Euro</p>
+                        </div>
+                        <div class="col d-flex flex-column align-items-center">
+                            <ion-icon class="text-primary" name="logo-paypal"></ion-icon>
+                            <p class="fw-bold fs-5 c-currency">Paypal</p>
+                        </div>
+                        <div class="col d-flex flex-column align-items-center">
+                            <ion-icon name="logo-usd"></ion-icon>
+                            <p class="fw-bold fs-5 c-currency">USD</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- footer -->
+        <footer id="contact">
+            <div class="container py-5 text-white">
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                        <div class="col">
+                            <div class="d-flex align-items-center">
+                                <ion-icon name="logo-capacitor" class="text-warning px-2"></ion-icon>
+                                <span class="fw-bolder fs-5">Consuloan</span>
+                            </div>
+                            <div class="d-flex flex-column justify-content-sm-between align-items-sm-start">
+                                <p class="my-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt corrupti quod autem vitae reprehenderit, dolores perferendis animi sit vero odit.</p>
+                                <a class="d-flex justify-content-lg-between align-items-center" href="#">
+                                    <ion-icon class="pe-2" name="location"></ion-icon>Eusbet Hotel,Sunyani,Ghana
+                                </a>
+                                <a class="d-flex justify-content-lg-between align-items-center" href="#">
+                                    <ion-icon class="pe-2" name="call"></ion-icon>+233-55-137-0432
+                                </a>
+                                <a class="d-flex justify-content-lg-between align-items-center" href="#">
+                                    <ion-icon class="pe-2" name="mail"></ion-icon>info.consoloancontact@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <p class="fw-bold fs-5">Our links</p>
+                            <div class="d-flex flex-column justify-content-sm-between align-items-sm-start">
+                                <table class="me-0 px-5">
+                                    <tr>
+                                        <td><a class="me-5" href="#">Home</a></td>
+                                        <td><a href="#">News</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a class="me-5" href="#">About Us</a></td>
+                                        <td><a href="#">Shop</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a class="me-5" href="#">Services</a></td>
+                                        <td><a href="#">Contact</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a class="me-5" href="#">Pages</a></td>
+                                        <td><a href="#">Support</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a class="me-5" href="#">Projects</a></td>
+                                        <td><a href="#">Career</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <p class="fw-bold fs-5">Recent News</p>
+                            <div class="d-flex flex-column justify-content-sm-between align-items-sm-start">
+                                <a href="#">Colombia Gets a Business</a>
+                                <a href="#">Makeover</a>
+                                <a href="#">Counting the Cost of Delay & Disruption</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <p class="fw-bold fs-5">Newsletter</p>
+                            <div class="d-flex flex-column justify-content-sm-between align-items-sm-start">
+                                <p>Subscribe to our newsletter to get alert about <a class="text-warning" href="#">Policies, Opportunities</a> etc.</p>
+                                <form class="d-flex flex-column justify-content-between">
+                                    <input class="bg-dark p-2 mb-1 text-center text-white fw-bold c-email" type="Email" placeholder="Enter Your Email" required>
+                                    <input class="bg-warning p-2 mt-1 text-center fw-bold" type="submit" placeholder="Subscribe">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <button type="button" class="btn btn-primary shadow fw-bold fs-5 c-top">Top</button>
+        <div class="bg-white shadow p-2 rounded fw-bold fs-5 displayText">Invest with us in this currency</div>
+        </div>
+        <!-- bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <!-- ion icons -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <!-- slider script -->
+        <!-- custom script -->
+        <script src="/company/resources/script/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&family=Roboto:ital,wght@0,300;0,400;1,100;1,300;1,400&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    /* color:navy;
+    color:rgba(0, 0, 255, 0.527) */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    z-index: -1;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.c-header-titleBar {
+    background-color: rgba(0, 0, 139, 0.642);
+}
+
+.c-header-titleBar ion-icon {
+    font-size: 20px;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.c-header-titleBar ion-icon:hover {
+    transform: scale(1.2);
+}
+
+.c-partB>a {
+    background-color: gold;
+}
+
+.c-partB>a:hover {
+    background-color: rgba(255, 217, 0, 0.85);
+}
+
+.vertical {
+    height: 30px;
+    width: 2px;
+    background-color: rgba(0, 0, 0, 0.591);
+}
+
+.collapse .nav-item .nav-link:hover {
+    color: gold;
+}
+
+
+/* hero-header */
+
+.c-hero-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.255), rgba(0, 0, 0, 0.255)), url("/company/resources/img/handstogether.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 100vh;
+}
+
+.c-hero-header .c-text {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-20%, -50%);
+}
+
+
+/* first section */
+
+.c-heading .c-horizontal {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 70px;
+    height: 4px;
+    background-color: gold;
+}
+
+.c-cards ion-icon {
+    color: gold;
+    font-size: 30px;
+}
+
+.c-cards .container .row div {
+    transition-duration: 0.5s;
+}
+
+.c-cards .container .row div:nth-child(2) {
+    background-color: rgba(0, 0, 255, 0.527);
+    color: white;
+}
+
+.c-cards .container .row div:nth-child(2):hover {
+    background-color: white;
+    color: black;
+}
+
+.c-cards .container .row div:hover:not(.c-cards .container .row div:nth-child(2)) {
+    background-color: rgba(0, 0, 255, 0.527);
+    color: white;
+}
+
+
+/* second section */
+
+#c-sec2 {
+    background: linear-gradient(rgba(0, 0, 255, 0.34), rgba(0, 0, 255, 0.34)), url("/company/resources/img/headsgather.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.c-sec2 {
+    column-gap: 2%;
+}
+
+.c-sec2 .c-img {
+    flex-basis: auto;
+}
+
+.c-sec2 .c-img img {
+    border-radius: 5px;
+}
+
+.c-sec2 .c-text {
+    flex-basis: 60%;
+}
+
+
+/* section 4 */
+
+#c-sec4 {
+    background-image: linear-gradient( rgba(0, 0, 255, 0.34), rgba(0, 0, 255, 0.34)), url("/company/resources/img/headsgather.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#c-sec4 ion-icon {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+/* section 6 */
+
+.c-google-map {
+    flex-basis: auto;
+}
+
+.c-google-map img {
+    /* height: 404px; */
+    height: fit-content;
+}
+
+.c-contact {
+    flex-basis: 50%;
+    background-image: linear-gradient( rgba(0, 0, 255, 0.34), rgba(0, 0, 255, 0.34)), url("/company/resources/img/headsgather.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+table tr td input:focus {
+    outline: none;
+}
+
+.c-contact h3 {
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+
+.c-financial ion-icon {
+    font-size: 28px;
+}
+
+
+/* footer */
+
+footer {
+    background-color: rgba(0, 0, 139, 0.642);
+    word-spacing: 1px;
+}
+
+footer a:hover {
+    color: gold;
+}
+
+footer ion-icon {
+    color: gold;
+}
+
+footer form input:focus {
+    outline: none;
+}
+
+footer form input {
+    border: none;
+}
+
+.c-top {
+    position: fixed;
+    bottom: 10%;
+    right: 2%;
+    z-index: 1;
+    opacity: 0;
+}
+
+.displayText {
+    opacity: 0;
+}
+
+
+/* media-queries */
+
+
+/* X-Small devices (portrait phones, less than 576px) */
+
+@media (min-width: 576px) {}
+
+
+/* Small devices (landscape phones, less than 768px) */
+
+@media (min-width: 768px) {}
+
+
+/* Medium devices (tablets, less than 992px) */
+
+@media (min-width: 992px) {}
+
+
+/* Large devices (desktops, less than 1200px) */
+
+@media (min-width: 1200px) {
+    /* body {
+        display: none;
+    } */
+}
+
+
+/* XX-Large devices (larger desktops)
+No media query since the xxl breakpoint has no upper bound on its width */
